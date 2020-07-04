@@ -1,0 +1,21 @@
+#cloud-config
+
+apt_update: true
+apt_upgrade: true
+packages:
+ - python3-pip
+ - python3-dev
+ - build-essential
+
+byobu_default: system 
+
+runcmd:
+ - pip3 install keras
+ - pip3 install tensorflow
+ - pip3 install dask
+
+ - git clone https://github.com/sciope/sciope.git 
+ - cd /home/ubuntu/sciope
+ - git checkout mattias_dev
+ - pip3 install .
+ - dask-worker <scheduler-ip>:<sheduler-port>
