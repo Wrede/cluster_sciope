@@ -30,7 +30,7 @@ git clone https://github.com/Wrede/cluster_sciope.git
 - OpenStack python code
   -- start_workers.py
 ```
-5. Change \<scheduler-ip\>:\<scheduler-port\> in cloud-cfg.txt. If one like to give a specific worker port use --worker-port \<port\>. n_workers = 2, change this to the amount of workers you want.
+5. Change \<scheduler-ip\>:\<scheduler-port\> in cloud-cfg.txt. If one like to give a specific worker port use --worker-port \<port\>.
 
 
 6. In order to run this code, you need to have OpenStack API environment running. 
@@ -81,7 +81,9 @@ apt install python3-keystoneclient
 
 ------------------
 
-NOTE: You need to setup \<YOUR-KEY\> in the start_workers.py script if you like to be able to log in to the workers.
+_NOTE: You need to setup \<YOUR-KEY\> in the start_workers.py script if you like to be able to log in to the workers.
+
+_NOTE: n_workers = 2 is defualt in start_workers.py, change this to the amount of workers you want.
 
 4. Once you have setup the environment, run the following command. 
 
