@@ -81,9 +81,9 @@ apt install python3-keystoneclient
 
 ------------------
 
-_NOTE: You need to setup \<YOUR-KEY\> in the start_workers.py script if you like to be able to log in to the workers.
+_NOTE: You need to setup \<YOUR-KEY\> in the start_workers.py script if you like to be able to log in to the workers._
 
-_NOTE: n_workers = 2 is defualt in start_workers.py, change this to the amount of workers you want.
+_NOTE: n_workers = 2 is defualt in start_workers.py, change this to the amount of workers you want._
 
 4. Once you have setup the environment, run the following command. 
 
